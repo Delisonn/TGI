@@ -276,14 +276,14 @@ async def main1(window: MainWindow, loop2) -> None:
     async with __import__('aiofiles').open('key.txt', 'r') as f:
         key = (await f.readline()).rstrip('\r\n')
     async with ClientSession() as session:
-        async with session.get('https://worldtimeapi.org/api/timezone/Etc/GMT') as response:
+        async with session.get('..............................') as response:
             html = await response.json()
             date = datetime.strptime(html['datetime'], '%Y-%m-%dT%H:%M:%S.%f%z')
             exterminated_date = datetime(date.year, date.month, date.day)
     with connect(
-            host='n2o93bb1bwmn0zle.chr7pe7iynqr.eu-west-1.rds.amazonaws.com',
-            user='swkx07fzx721v10k', password='tnp3hs1sc5263whn',
-            database='y2miaectfyt35x05'
+            host='......................',
+            user='...........', password='.............',
+            database='...........'
     ) as connection:
         with connection.cursor() as cursor:
             try:
